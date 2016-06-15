@@ -18,8 +18,6 @@ function edgeIECheck() {
 
 var microsoft = edgeIECheck();
 
-console.log(microsoft);
-
 var $span = $('span'),
 		$audio1 = $('audio')[0],
 		$audio2 = $('audio')[1],

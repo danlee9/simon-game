@@ -10,8 +10,13 @@ button {
 	outline: none;
 }
 
+/* Removes outline on buttons on firefox */
 button::-moz-focus-inner {
 	border: 0;
+}
+
+a:focus { 
+  outline: none; 
 }
 
 footer {
