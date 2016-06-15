@@ -1,3 +1,25 @@
+function edgeIECheck() {
+	if (/MSIE 10/i.test(navigator.userAgent)) {
+	   // This is internet explorer 10
+	   return true;
+	}
+
+	if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
+	    // This is internet explorer 9 or 11
+	    return true;
+	}
+
+	if (/Edge\/\d./i.test(navigator.userAgent)){
+	   // This is Microsoft Edge
+	   return true;
+	}
+	return false;
+}
+
+var microsoft = edgeIECheck();
+
+console.log(microsoft);
+
 var $span = $('span'),
 		$audio1 = $('audio')[0],
 		$audio2 = $('audio')[1],
@@ -8,6 +30,12 @@ var $span = $('span'),
 		$yellow = $('.bottom-left'),
 		$blue = $('.bottom-right'),
 		$press = $('.press');
+
+// closes white space between buttons displayed on microsoft browsers
+if (microsoft) {
+	$green.css('margin-bottom', '-4px');
+	$red.css('margin-bottom', '-4px');
+}
 
 var colors = [$green, $red, $yellow, $blue];
 var strictMode = false;
