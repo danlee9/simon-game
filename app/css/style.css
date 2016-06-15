@@ -1,0 +1,153 @@
+body {
+	font-family: 'Arial';
+  background-color: lightskyblue;
+}
+
+button {
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+}
+
+footer {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.container {
+	width: 440px;
+	margin: 100px auto;
+	position: relative;
+	-webkit-user-select: none;  
+  -moz-user-select: none;     
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+.center {
+	position: absolute;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	background: dodgerblue;
+	margin-left: 110px;
+	margin-top: 110px;
+	border: 10px solid black;
+}
+
+.controls {
+	margin-top: -12px;
+}
+
+.control {
+	position: relative;
+	width: 50px;
+	height: 40px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 2px 0px black;
+	-moz-box-shadow: 0px 2px 0px black;
+	box-shadow: 0px 2px 0px black;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+.control:active {
+	position: relative;
+	-webkit-box-shadow: 0px 0px 0px black;
+	-moz-box-shadow: 0px 0px 0px black;
+	box-shadow: 0px 0px 0px black;
+	top: 2px;
+}
+
+#start {
+	background: indianred;
+}
+
+#strict {
+	background: palegoldenrod;
+}
+
+#strict.active {
+	box-shadow: 0 0 3px 3px yellow;
+	background: yellow;
+}
+
+#reset {
+	background: mediumseagreen;
+}
+
+.counter {
+	margin-top: -10px;
+}
+
+span {
+	box-sizing: border-box;
+	display: inline-block;
+	margin-top: -10px;
+	background: #4E3E3E;
+	padding: 7px;
+	font-size: 1.2em;
+	border: 2px solid black;
+	width: 40px;
+}
+
+.start {
+	background: white;
+}
+
+/* Buttons automatically have border-box box-sizing */
+.press {
+	width: 220px;
+	border: 10px solid black;
+	height: 220px;
+	background: dodgerblue;
+}
+
+.top-left {
+	border-top-left-radius : 100%;
+	background: #00A74A;
+	border-top: 20px solid black;
+	border-left: 20px solid black;
+}
+
+.top-left.pressed {
+	background: #00FF71;
+}
+
+.top-right {
+	border-top-right-radius: 100%;
+	background: #9F0F17;
+	border-top: 20px solid black;
+	border-right: 20px solid black;
+}
+
+.top-right.pressed {
+	background: #FF000E;
+}
+
+.bottom-left {
+	border-bottom-left-radius: 100%;
+	background: #CCA707;
+	border-bottom: 20px solid black;
+	border-left: 20px solid black;
+}
+
+.bottom-left.pressed {
+	background: #FFF700;
+}
+
+.bottom-right {
+	border-bottom-right-radius: 100%;
+	background: #094A8F;
+	border-bottom: 20px solid black;
+	border-right: 20px solid black;
+}
+
+.bottom-right.pressed {
+	background: #007CFF;
+}
+

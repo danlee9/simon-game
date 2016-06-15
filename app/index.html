@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simon Says</title>
+	<!-- build:css css/style.css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- endbuild -->
+</head>
+<body>
+	<div class="container">
+		<div class="center">
+			<h1>Simon</h1>
+			<div class="controls">
+				<button class="control" id="start">Start</button>
+				<button class="control" id="strict">Strict</button>
+				<button class="control" id="reset">Reset</button>
+			</div>
+			<div class="counter">
+				<h3>Count</h3>
+				<span>00</span>
+			</div>
+		</div>
+		<div class="buttons">
+			<button class="press top-left"></button><button class="press top-right"></button>
+			<button class="press bottom-left"></button><button class="press bottom-right"></button>
+		</div>
+	</div>
+
+	<footer>
+		<a href="" target="_blank">Rules</a>
+	</footer>
+	
+	<audio src="assets/simonSound1.mp3">
+		<p>Your browser does not support the <code>audio</code> element.</p>
+	</audio>
+	
+	<audio src="assets/simonSound2.mp3"></audio>
+	<audio src="assets/simonSound3.mp3"></audio>
+	<audio src="assets/simonSound4.mp3"></audio>
+	
+	<!-- build:js js/style.js -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<!-- endbuild -->
+	
+</body>
+</html>
